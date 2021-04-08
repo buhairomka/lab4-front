@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lab%204.js" defer></script>
+    <style>
+        #cube {
+            width: 50px;
+            height: 30px;
+            background-color: greenyellow;
+            outline: none;
+        }
+
+        #cube:hover {
+            cursor: pointer;
+            background-color: #36d036;
+        }
+    </style>
+
+</head>
+<body>
+<button id="cube">
+    click
+</button>
+<p id="counter">0</p>
+<button onmouseover="clickInScript()" onmouseout="outOfButton()">ckick me</button>
+<script>
+    function clickInScript() {
+        console.log('in')
+    }
+    function outOfButton() {
+        console.log('out')
+    }
+</script>
+</body>
+</html>
